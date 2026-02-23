@@ -21,9 +21,15 @@
         <li><a href="{% url 'about' %}"><i class="fas fa-info-circle"></i> О нас</a></li>
         <li><a href="{% url 'kontacts' %}"><i class="fas fa-envelope"></i> Контакты</a></li>
         <li><a href="{% url 'news_home' %}"><i class="fas fa-envelope"></i> Новости</a></li>
+
         <li>
             <a href="{% url 'create' %}" class="btn btn-info">
                 <i class="fas fa-plus-circle"></i> Добавить запись
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'news_create' %}" class="btn btn-info">
+                <i class="fas fa-plus-circle"></i> Добавить газету
             </a>
         </li>
     </ul>
