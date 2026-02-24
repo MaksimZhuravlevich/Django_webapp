@@ -13,6 +13,15 @@ class NewsUpdateView(UpdateView):
     template_name = 'news/create.html'
     form_class = ArticlesForm
 
+class NewspaperUpdateView(UpdateView):
+    model= Newspaper
+    template_name = 'news/news_create.html'
+    form_class=NewspaperForm
+
+class NewspaperDeleteView(DeleteView):
+    model = Newspaper
+    template_name = 'news/newspaper_delete.html'
+    success_url = '/news'
 
 class NewsDetailView(DetailView):
     model= Articles

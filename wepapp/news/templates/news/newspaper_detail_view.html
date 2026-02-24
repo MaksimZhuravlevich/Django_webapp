@@ -6,6 +6,7 @@
     <div class="features">
         <h1>{{ newspaper.name }}</h1>
         <p>{{ newspaper.information }}</p>
-
+        <a href="{% url 'newspaper_update' newspaper.id  %}" class = 'btn btn-success'>Редактировать газету</a>
+        <a href="{% url 'newspaper_delete' newspaper.id  %}" class = 'btn btn-danger'>Удалить газету</a>
     </div>
 {% endblock %}

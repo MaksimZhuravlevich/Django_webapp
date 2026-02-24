@@ -7,6 +7,9 @@ class Newspaper(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return f'/news/newspaper/{self.id}'
     class Meta:
         verbose_name = 'Название'
         verbose_name_plural = 'Названия'
