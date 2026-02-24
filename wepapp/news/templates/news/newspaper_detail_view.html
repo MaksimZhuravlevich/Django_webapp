@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ newspaper.name }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ newspaper.name }}</h1>
+        <p>{{ newspaper.information }}</p>
+
+    </div>
+{% endblock %}
